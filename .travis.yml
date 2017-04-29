@@ -10,6 +10,7 @@ install:
   - pip install -e .
 script:
   - pylint example_package/
+  - isort --check-only --trailing-comma --verbose --recursive example_package/
   - bandit -r example_package/
   - py.test --cov=example_package example_package/tests
 after_success:
