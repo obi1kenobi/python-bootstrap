@@ -1,0 +1,16 @@
+sudo: false
+language: python
+cache: pip
+python:
+  - "2.7"
+  - "3.6"
+install:
+  - pip install -r dev-requirements.txt
+  - pip install -r requirements.txt
+  - pip install -e .
+script:
+  - pylint example_package/
+  - bandit -r example_package/
+  - py.test --cov=example_package example_package/tests
+after_success:
+  - coveralls
