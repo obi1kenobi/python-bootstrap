@@ -58,6 +58,10 @@ disable=parameter-unpacking,long-suffix,raw-checker-failed,bad-inline-option,loc
 # it should appear only once). See also the "--disable" option for examples.
 enable=
 
+# Consider the following sample rc files for errors to enable/disable:
+# https://github.com/datawire/quark/blob/master/.pylintrc
+# https://github.com/ClusterHQ/flocker/blob/master/.pylintrc
+
 
 [REPORTS]
 
