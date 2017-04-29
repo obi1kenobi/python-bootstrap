@@ -1,6 +1,4 @@
 """Docs go here."""
-import abc
-import os
 
 
 def add(first, second):

@@ -1,3 +1,4 @@
+"""Basic tests for the addition code."""
 import unittest
 
 from example_package.addition import add
