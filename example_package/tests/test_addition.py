@@ -1,4 +1,6 @@
 """Basic tests for the addition code."""
+from __future__ import absolute_import
+
 import unittest
 
 from example_package.addition import add
