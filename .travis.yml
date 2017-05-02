@@ -10,7 +10,7 @@ install:
   - pip install -e .
 script:
   - pydocstyle example_package/
-  - isort --check-only --trailing-comma --verbose --recursive example_package/
+  - isort --check-only --verbose --recursive example_package/
   - pylint example_package/
   - bandit -r example_package/
   - py.test --cov=example_package example_package/tests
