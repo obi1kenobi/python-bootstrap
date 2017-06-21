@@ -22,7 +22,7 @@ jobs=1
 
 # List of plugins (as comma separated values of python modules names) to load,
 # usually to register additional checkers.
-load-plugins=
+load-plugins=pylint.extensions.docparams,pylint.extensions.docstyle,pylint.extensions.overlapping_exceptions,pylint.extensions.redefined_variable_type
 
 # Pickle collected data for later comparisons.
 persistent=no
@@ -261,7 +261,11 @@ enable=abstract-class-instantiated,
     yield-inside-async-function,
     yield-outside-function,
     zip-builtin-not-iterating,
-
+    # Extensions
+    multiple_types,
+    overlap-except,
+    docstyle,
+    # parameter_documentation,   # needs some more configuration
 
 # Consider the following sample rc files for errors to enable/disable:
 # https://github.com/datawire/quark/blob/master/.pylintrc
